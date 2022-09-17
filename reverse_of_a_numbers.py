@@ -1,7 +1,7 @@
 n=int(input())
-revs_n=0
-while(n>0):
-    remainder=n%10
-    revs_n=(revs_n*10)+remainder
+rev=0
+while n>0:
+    r=n%10
+    rev=rev*10+r
     n=n//10
-print(revs_n)
+print(rev)
