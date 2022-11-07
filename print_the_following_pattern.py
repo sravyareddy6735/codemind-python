@@ -1,10 +1,7 @@
-hr=int(input())
-for i in range(hr,0,-1):
-    for j in range(1,i):
-        print(' ',end='')
-    for k in range(0,hr):
-        if(i==1 or i==hr or k==0 or k==hr-1):
-            print('*',end='')
-        else:
-            print(' ',end='')
-    print()
+n=int(input())
+p=ord("A")+n-1
+for i in range(n):
+    for j in range(i,n):
+        print(chr(p),end=" ")
+    print("")
+    p-=1
