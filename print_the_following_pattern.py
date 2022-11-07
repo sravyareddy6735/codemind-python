@@ -1,7 +1,7 @@
-p=65
 n=int(input())
-for i in range(n):
-    for j in range(n):
-        print(chr(p),end=" ")
-    print("")
-    p+=1
+i=1
+while(i<=n):
+    for j in range(1,i+1):
+        print(j,end='')
+    print()
+    i+=1
