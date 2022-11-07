@@ -1,7 +1,10 @@
-n=int(input())
-i=1
-while(i<=n):
-    for j in range(1,i+1):
-        print(j,end='')
+hr=int(input())
+for i in range(hr,0,-1):
+    for j in range(1,i):
+        print(' ',end='')
+    for k in range(0,hr):
+        if(i==1 or i==hr or k==0 or k==hr-1):
+            print('*',end='')
+        else:
+            print(' ',end='')
     print()
-    i+=1
