@@ -1,12 +1,11 @@
 n=int(input())
-nd=''
-for i in range(n,0,-1):
-    nd+=str(i)
-l=len(nd)
-for i in range(l):
-    for j in range(l):
-        if i==j or i+j==l-1:
-            print(nd[i],end=' ')
-        else:
-            print(" ",end='')
+for i in range(1,n+1):
+    for j in range(n,i,-1):
+        print(" ",end="")
+    for k in range(1,i+1):
+        a=chr(k+64)
+        print(a,end="")
+    for k in range(k-1,0,-1):
+        a=chr(k+64)
+        print(a,end='')
     print()
